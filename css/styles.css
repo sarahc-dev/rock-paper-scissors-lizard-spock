@@ -398,6 +398,11 @@ header {
   letter-spacing: 2.5px;
 }
 
+.btn-clear:hover {
+  color: var(--color-dark-text);
+  background: var(--color-white-btn);
+}
+
 .play-again {
   margin-top: var(--s-16);
   padding: var(--s-15) var(--s-64);
@@ -411,7 +416,7 @@ header {
 }
 
 .play-again:hover {
-  color: var(--btn-outer-red);
+  color: var(--btn-outer-red-shadow);
 }
 
 .btn-outer {
@@ -433,6 +438,10 @@ header {
   border-radius: 150px;
   -webkit-transform: translateY(-2%);
           transform: translateY(-2%);
+}
+
+.btn-outer:hover {
+  opacity: 0.7;
 }
 
 @media (min-width: 600px) {

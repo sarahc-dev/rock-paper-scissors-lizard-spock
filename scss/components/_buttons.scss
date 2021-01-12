@@ -6,6 +6,11 @@
   border: 1px solid var(--color-white);
   border-radius: 8px;
   letter-spacing: 2.5px;
+
+  &:hover {
+    color: var(--color-dark-text);
+    background: var(--color-white-btn);
+  }
 }
 
 .play-again {
@@ -17,8 +22,8 @@
   text-transform: uppercase;
   border-radius: 8px;
   box-shadow: var(--shadow);
-}
 
-.play-again:hover {
-  color: var(--btn-outer-red);
+  &:hover {
+    color: var(--btn-outer-red-shadow);
+  }
 }
