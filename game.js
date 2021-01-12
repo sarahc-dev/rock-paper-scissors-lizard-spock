@@ -7,9 +7,8 @@ let userChoice = "";
 let gameChoice = "";
 
 let score = sessionStorage.getItem("score");
-// check for sessionStorage? Check mark's phone
 
-if (score == null || score == "NaN") {
+if (score == null) {
     $("h2").innerHTML = 0;
 } else {
     $("h2").innerHTML = score;
@@ -62,7 +61,6 @@ function newGame() {
    setTimeout(() => {
     housePicks();
 }, 1000);
-
 }
 
 function housePicks() {
@@ -94,9 +92,6 @@ function housePicks() {
         
     }
 
-
-    
-
     setTimeout(() => {
         whoWins();
     }, 1000);
@@ -109,7 +104,6 @@ function whoWins() {
 
     if (userChoice == gameChoice) {
         $("h1").innerHTML = "Draw";
-        newScore = parseInt(score, 10);
     } else if ((userChoice == "paper" && gameChoice == "rock") || (userChoice == "spock" && gameChoice == "rock") || (userChoice == "rock" && gameChoice == "scissors") || (userChoice == "rock" && gameChoice == "lizard") || (userChoice == "lizard" && gameChoice == "spock") || (userChoice == "lizard" && gameChoice == "paper") || (userChoice == "spock" && gameChoice == "scissors") || (userChoice == "spock" && gameChoice == "rock") || (userChoice == "scissors" && gameChoice == "paper") || (userChoice == "scissors" && gameChoice == "lizard")) {
         $("h1").innerHTML = "You win";
         
