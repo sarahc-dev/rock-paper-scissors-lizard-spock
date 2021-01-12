@@ -23,6 +23,10 @@
   justify-self: center;
 }
 
+.btn-container:nth-child(2) {
+  width: fit-content;
+}
+
 .btn-container:nth-child(3) {
   justify-self: end;
 }
@@ -34,6 +38,7 @@
 
 .btn-container:nth-child(5) {
   margin-top: 1.5rem;
+  width: fit-content;
 }
 
 .transparent-circle {
@@ -48,7 +53,7 @@
   @media (min-width: 750px) {
     height: 224.63px;
     width: 224.63px;
-    margin-top: 130px;
+    margin: 130px 2.124rem 0;
   }
 }
 
@@ -87,6 +92,6 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 30%;
+    top: 350px;
   }
 }

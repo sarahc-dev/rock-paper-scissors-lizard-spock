@@ -1,5 +1,5 @@
 .rules-popup {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   padding: 5.9rem var(--s-32) 0;
   position: absolute;
@@ -24,7 +24,7 @@
   .rules-popup {
     width: 400px;
     height: 415px;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-position: center 70%;
@@ -41,7 +41,7 @@
   }
 
   .rules-background {
-    height: 100vh;
+    height: 115vh;
     width: 100%;
     background-color: hsla(0, 0%, 0%, 0.5);
     position: absolute;

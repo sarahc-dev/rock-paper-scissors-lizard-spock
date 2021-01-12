@@ -28,6 +28,8 @@ function newGame() {
     $(".btn-container:nth-child(5)").classList.add("hidden");
     $(".btn-container:nth-child(3)").classList.add("transparent-circle");
     $(".btn-container:nth-child(3) .btn-outer-shadow").classList.add("hidden");
+    $(".btn-container:nth-child(3) .btn-outer-shadow").classList.remove(".btn-outer-shadow");
+    // $(".btn-container:hover:nth-child(2)").style.background("none");
 
     let userBtn = userChoice + "-outer";
     let newImg = "./images/icon-" + userChoice + ".svg";
@@ -55,7 +57,7 @@ function newGame() {
     $("[value='spock'] img").classList.add(userChoice + "-lrg");
     $(".btn-container:nth-child(2)").prepend(youPicked);
     $(".transparent-circle").prepend(housePicked);
-    // $(".game-pentagon").style.transform = "translateX(-20%)";
+    $(".game-pentagon").style.maxWidth = "600px";
    }
     
    setTimeout(() => {
@@ -101,6 +103,7 @@ function whoWins() {
     let newScore = 0;
 
     $(".game-result").classList.remove("hidden");
+   
 
     if (userChoice == gameChoice) {
         $("h1").innerHTML = "Draw";
@@ -141,10 +144,8 @@ function whoWins() {
 
 $(".rules").addEventListener("click", () => {
     $(".rules-background").classList.remove("hidden");
-    // $("main").classList.add("hidden");
 
     $("button").addEventListener("click", () => {
         $(".rules-background").classList.add("hidden");
-        // $("main").classList.remove("hidden");
     })
 })

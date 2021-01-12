@@ -301,6 +301,12 @@ header {
       justify-self: center;
 }
 
+.btn-container:nth-child(2) {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .btn-container:nth-child(3) {
   -ms-grid-column-align: end;
       justify-self: end;
@@ -314,6 +320,9 @@ header {
 
 .btn-container:nth-child(5) {
   margin-top: 1.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .transparent-circle {
@@ -330,7 +339,7 @@ header {
   .transparent-circle {
     height: 224.63px;
     width: 224.63px;
-    margin-top: 130px;
+    margin: 130px 2.124rem 0;
   }
 }
 
@@ -384,7 +393,7 @@ header {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    bottom: 30%;
+    top: 350px;
   }
 }
 
@@ -689,7 +698,7 @@ header {
 }
 
 .rules-popup {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   padding: 5.9rem var(--s-32) 0;
   position: absolute;
@@ -715,7 +724,7 @@ header {
   .rules-popup {
     width: 400px;
     height: 415px;
-    top: 50%;
+    top: 45%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -732,7 +741,7 @@ header {
     right: 2rem;
   }
   .rules-background {
-    height: 100vh;
+    height: 115vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
