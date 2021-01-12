@@ -1,0 +1,36 @@
+header {
+  max-width: 25rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid var(--color-header-outline);
+  border-radius: 5px;
+
+  @media (min-width: 600px) {
+    max-width: 43.75rem;
+  }
+}
+
+.header-logo {
+  margin: var(--s-24);
+
+  @media (min-width: 600px) {
+    width: 111px;
+    height: 111px;
+    margin: var(--s-20) var(--s-32);
+  }
+}
+
+.header-score {
+  background: var(--color-white-btn);
+  margin: var(--s-12);
+  padding: var(--s-10) var(--s-21);
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: var(--shadow);
+
+  @media (min-width: 600px) {
+    padding: var(--s-16) var(--s-48);
+    margin: var(--s-18) var(--s-24);
+  }
+}

@@ -1,0 +1,245 @@
+.btn-outer {
+  height: 97px;
+  width: 96px;
+  position: relative;
+  background: var(--btn-outer-yellow-shadow);
+  border-radius: 150px;
+  box-shadow: var(--shadow);
+
+  &:before {
+    content: "";
+    display: block;
+    height: 92.7px;
+    width: 96px;
+    background: var(--btn-outer-yellow);
+    border-radius: 150px;
+    transform: translateY(-2%);
+  }
+
+  @media (min-width: 600px) {
+    height: 148px;
+    width: 145px;
+
+    &:before {
+      height: 141.44px;
+      width: 145px;
+    }
+  }
+}
+
+.spock-outer {
+  background: var(--btn-outer-cyan-shadow);
+
+  &:before {
+    background: var(--btn-outer-cyan);
+  }
+}
+
+.scissors-outer {
+  background: var(--btn-outer-yellow-shadow);
+
+  &:before {
+    background: var(--btn-outer-yellow);
+  }
+}
+
+.paper-outer {
+  background: var(--btn-outer-blue-shadow);
+
+  &:before {
+    background: var(--btn-outer-blue);
+  }
+}
+
+.lizard-outer {
+  background: var(--btn-outer-purple-shadow);
+
+  &:before {
+    background: var(--btn-outer-purple);
+  }
+}
+
+.rock-outer {
+  background: var(--btn-outer-red-shadow);
+
+  &:before {
+    background: var(--btn-outer-red);
+  }
+}
+
+.btn-inner {
+  height: 72.63px;
+  width: 73.7px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: var(--btn-inner-shadow);
+  border-radius: 150px;
+  transform: translate(-50%, -53%);
+
+  &:before {
+    content: "";
+    display: block;
+    height: 68.81px;
+    width: 73.7px;
+    background: var(--btn-inner);
+    border-radius: 150px;
+    transform: translateY(7.5%);
+  }
+
+  @media (min-width: 600px) {
+    height: 110.82px;
+    width: 111.31px;
+
+    &:before {
+      height: 104.99px;
+      width: 111.31px;
+    }
+  }
+}
+
+.btn-img {
+  transform: translateY(-120%);
+}
+
+.paper {
+  width: 36px;
+  height: 41px;
+
+  @media (min-width: 600px) {
+    height: 63px;
+    width: 54px;
+  }
+}
+
+.scissors {
+  width: 47px;
+  height: 46px;
+
+  @media (min-width: 600px) {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+.rock {
+  width: 37px;
+  height: 36px;
+
+  @media (min-width: 600px) {
+    height: 55px;
+    width: 55px;
+  }
+}
+
+.lizard {
+  width: 41px;
+  height: 40px;
+
+  @media (min-width: 600px) {
+    height: 60px;
+    width: 62px;
+  }
+}
+
+.spock {
+  width: 30px;
+  height: 39px;
+
+  @media (min-width: 600px) {
+    height: 59px;
+    width: 44px;
+  }
+}
+
+// Medium buttons for second view on mobile, lrg buttons for desktop
+
+.medium-outer {
+  height: 133px;
+  width: 130px;
+
+  &:before {
+    height: 127.1px;
+    width: 130px;
+  }
+}
+
+.medium-inner {
+  height: 99.59px;
+  width: 99.8px;
+
+  &:before {
+    height: 94.34px;
+    width: 99.8px;
+  }
+}
+
+.paper-med {
+  width: 48px;
+  height: 56px;
+}
+
+.scissors-med {
+  width: 63px;
+  height: 63px;
+}
+
+.rock-med {
+  width: 50px;
+  height: 50px;
+}
+
+.lizard-med {
+  width: 56px;
+  height: 54px;
+}
+
+.spock-med {
+  width: 40px;
+  height: 53px;
+}
+
+.lrg-outer {
+  height: 300px;
+  width: 292.61px;
+
+  &:before {
+    height: 286.7px;
+    width: 292.61px;
+  }
+}
+
+.lrg-inner {
+  height: 224.63px;
+  width: 224.63px;
+
+  &:before {
+    height: 212.81px;
+    width: 224.63px;
+  }
+}
+
+.paper-lrg {
+  width: 108px;
+  height: 125px;
+}
+
+.scissors-lrg {
+  width: 141.87px;
+  height: 141.87px;
+}
+
+.rock-lrg {
+  width: 110px;
+  height: 112px;
+}
+
+.lizard-lrg {
+  width: 108px;
+  height: 128px;
+}
+
+.spock-lrg {
+  width: 95px;
+  height: 125px;
+}

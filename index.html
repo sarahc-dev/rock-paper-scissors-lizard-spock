@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./images/favicon-32x32.png"
+  />
+
+  <title>Rock, Paper, Scissors Game</title>
+
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+  <script src="game.js" defer></script>
+</head>
+<body>
+    <section class="rules-background hidden">
+        <div class="rules-popup">
+          <h4>Rules</h4>
+            <button>
+              <img
+               aria-label="close"
+               src="./images/icon-close.svg"
+               alt=""
+               height="20"
+               width="20"
+              />
+            </button>
+        </div>
+    </section>
+    <main>
+        <header>
+            <img
+              class="header-logo"
+              src="./images/logo-bonus.svg"
+              alt="Rock Paper Scissors"
+              width="49"
+                height="49" 
+            />
+            <div class="header-score">
+              <p>Score</p>
+              <h2></h2>
+            </div>
+        </header>
+        <section class="game">
+              <div class="game-pentagon">
+                  <div class="btn-container">
+                      <div class="btn-outer-shadow">
+                          <button value="scissors" class="btn-outer scissors-outer">
+                              <div class="btn-inner">
+                                  <img class="btn-img scissors" src="./images/icon-scissors.svg" alt="scissors">
+                              </div>
+                          </button>
+                      </div>
+                  </div>
+                  <div class="btn-container">
+                    <div class="btn-outer-shadow">
+                        <button value="spock" class="btn-outer spock-outer">
+                            <div class="btn-inner">
+                                <img class="btn-img spock" src="./images/icon-spock.svg" alt="spock">
+                            </div>
+                        </button>
+                    </div>
+                  </div>
+                  <div class="btn-container">
+                    <div class="btn-outer-shadow">
+                        <button value="paper" class="btn-outer paper-outer">
+                            <div class="btn-inner">
+                                <img class="btn-img paper" src="./images/icon-paper.svg" alt="paper">
+                            </div>
+                        </button>
+                    </div>
+                  </div>
+                  <div class="btn-container">
+                    <div class="btn-outer-shadow">
+                        <button value="lizard" class="btn-outer lizard-outer">
+                            <div class="btn-inner">
+                                <img class="btn-img lizard" src="./images/icon-lizard.svg" alt="lizard">
+                            </div>
+                        </button>
+                    </div>
+                  </div>
+                  <div class="btn-container">
+                    <div class="btn-outer-shadow">
+                        <button value="rock" class="btn-outer rock-outer">
+                            <div class="btn-inner">
+                                <img class="btn-img rock" src="./images/icon-rock.svg" alt="rock">
+                            </div>
+                        </button>
+                    </div>
+                  </div>
+              </div>
+              <div class="game-result hidden"> 
+                <h1>You lose</h1>
+                <button class="play-again">Play again</button>
+              </div>
+              </div>
+        </section>
+
+        <button class="rules btn-clear">Rules</button>
+    </main>
+    
+    <footer>
+        <div class="attribution">
+            Challenge by
+            <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+              >Frontend Mentor</a
+            >. Coded by <a href="#">Sarah</a>.
+        </div>
+    </footer>
+</body>
+</html>

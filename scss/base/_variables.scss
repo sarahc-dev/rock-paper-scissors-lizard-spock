@@ -1,0 +1,52 @@
+:root {
+  // Fonts and sizes
+  --font-family: "Barlow Semi Condensed", sans-serif;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  --s-10: 0.625rem;
+  --s-12: 0.75rem;
+  --s-15: 0.9375rem;
+  --s-16: 1rem;
+  --s-18: 1.125rem;
+  --s-20: 1.25rem;
+  --s-21: 1.3125rem;
+  --s-24: 1.5rem;
+  --s-32: 2rem;
+  --s-36: 2.25rem;
+  --s-40: 2.5rem;
+  --s-48: 3rem;
+  --s-56: 3.5rem;
+  --s-64: 4rem;
+
+  // Colors
+
+  --color-score: hsl(229, 64%, 46%);
+  --color-header-outline: hsl(217, 16%, 45%);
+  --color-dark-text: hsl(229, 25%, 31%);
+  --color-white: #ffffff;
+  --color-white-btn: linear-gradient(0deg, #f3f3f3 0%, #ffffff 100%);
+  --background-gradient: radial-gradient(
+    134.34% 134.34% at 50% 0%,
+    hsl(214, 47%, 23%) 0%,
+    hsl(237, 49%, 15%) 100%
+  );
+  --btn-inner: linear-gradient(
+    0deg,
+    hsl(0, 0%, 95%, 1) 0%,
+    hsl(0, 0%, 85%, 1) 98.34%
+  );
+  --btn-inner-shadow: hsl(230, 23%, 78%, 1);
+  --btn-outer-blue: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  --btn-outer-blue-shadow: hsl(230, 64%, 36%, 1);
+  --btn-outer-red: linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  --btn-outer-red-shadow: hsl(347, 75%, 35%, 1);
+  --btn-outer-yellow: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  --btn-outer-yellow-shadow: hsl(28, 77%, 44%, 1);
+  --btn-outer-purple: linear-gradient(hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+  --btn-outer-purple-shadow: hsl(261, 51%, 44%, 1);
+  --btn-outer-cyan: linear-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+  --btn-outer-cyan-shadow: hsl(194, 58%, 42%, 1);
+
+  --shadow: 0px 3px 3px hsl(0, 0%, 0%, 0.2);
+}

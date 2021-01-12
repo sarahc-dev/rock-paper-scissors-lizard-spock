@@ -1,0 +1,51 @@
+.hidden {
+  display: none;
+}
+
+main {
+  min-height: 100vh;
+  padding: var(--s-32) 8.5%;
+  position: relative;
+
+  @media (min-width: 600px) {
+    padding: var(--s-48);
+  }
+}
+
+.game {
+  margin-top: 29%;
+
+  @media (max-height: 700px), (min-width: 600px) {
+    margin-top: 5%;
+  }
+
+  @media (min-width: 1000px) {
+    margin-top: var(--s-48);
+  }
+}
+
+.rules {
+  position: absolute;
+  bottom: calc(44px + var(--s-12));
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: 600px) {
+    right: var(--s-48);
+    left: unset;
+    transform: unset;
+  }
+
+  @media (max-width: 360px), (max-height: 620px) {
+    bottom: 44px;
+  }
+}
+
+.attribution {
+  margin: 1rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--color-white);
+}
