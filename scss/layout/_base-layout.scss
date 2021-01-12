@@ -26,7 +26,7 @@ main {
 
 .rules {
   position: absolute;
-  bottom: calc(44px + var(--s-12));
+  bottom: calc(84px + var(--s-12));
   left: 50%;
   transform: translateX(-50%);
 
@@ -37,7 +37,7 @@ main {
   }
 
   @media (max-width: 360px), (max-height: 620px) {
-    bottom: 44px;
+    bottom: var(--s-48);
   }
 }
 
