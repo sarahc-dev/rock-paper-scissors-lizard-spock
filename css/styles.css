@@ -188,7 +188,7 @@ main {
 
 .rules {
   position: absolute;
-  bottom: calc(84px + var(--s-12));
+  bottom: 100px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);

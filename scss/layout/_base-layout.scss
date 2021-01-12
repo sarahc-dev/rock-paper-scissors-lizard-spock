@@ -26,7 +26,8 @@ main {
 
 .rules {
   position: absolute;
-  bottom: calc(84px + var(--s-12));
+  bottom: 100px;
+  // bottom: calc(44px + var(--s-12));
   left: 50%;
   transform: translateX(-50%);
 
